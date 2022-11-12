@@ -356,31 +356,31 @@ body {
     border-radius: 10px;
 }
 
-#sm-banner .banner-box2{
+#sm-banner .banner-box2 {
     background-image: url(../img/banner/b10.jpg);
 }
 
-#sm-banner h4{
+#sm-banner h4 {
     color: #fff;
     font-size: 20px;
-    font-weight: 300; 
+    font-weight: 300;
 }
 
-#sm-banner h2{
+#sm-banner h2 {
     color: #fff;
     font-size: 30px;
-    font-weight: 800; 
+    font-weight: 800;
 }
 
-#sm-banner span{
+#sm-banner span {
     color: #fff;
     font-size: 15px;
     font-weight: 500;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
 
 }
 
-#sm-banner .orangebtn{
+#sm-banner .orangebtn {
     margin-top: 30px;
     background-color: transparent;
     border: 2px solid #fff;
@@ -388,14 +388,14 @@ body {
 
 }
 
-#sm-banner .orangebtn:hover{
+#sm-banner .orangebtn:hover {
     background-color: #088178;
     color: #fff;
     border: none;
 
 }
 
-#sm-banner-3{
+#sm-banner-3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -415,29 +415,29 @@ body {
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 20px;
-} 
+}
 
-#sm-banner-3 h2{
+#sm-banner-3 h2 {
     color: #fff;
     font-weight: 900;
     font-size: 22px;
 }
 
-#sm-banner-3 h3{
+#sm-banner-3 h3 {
     color: #e2ff03;
     font-weight: 800;
     font-size: 15px;
 }
 
-#sm-banner-3 .banner-box2{
+#sm-banner-3 .banner-box2 {
     background-image: url(../img/banner/b4.jpg);
 }
 
-#sm-banner-3 .banner-box3{
+#sm-banner-3 .banner-box3 {
     background-image: url(../img/banner/b18.jpg);
 }
 
-#sm-banner-3 .banner-box3 h3{
+#sm-banner-3 .banner-box3 h3 {
     color: #fff;
     background-color: #0091C6;
 }
