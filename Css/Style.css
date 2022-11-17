@@ -85,6 +85,8 @@ body {
 
 }
 
+
+
 #navbar li {
     padding: 0 20px;
     position: relative;
@@ -112,6 +114,16 @@ body {
     position: absolute;
     bottom: -4px;
     left: 22px;
+}
+
+#navbar .close{
+    display: none;
+}
+
+
+
+.mobile {
+    display: none;
 }
 
 /*******************Home Page*******************/
@@ -347,14 +359,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(../img/banner/b17.jpg);
+    background-image: url("../img/banner/b17.jpg");
     background-size: cover;
     background-position: center;
-    min-width: 580px;
+    width: 49%;
     height: 50vh;
     padding: 30px;
     border-radius: 10px;
-}
+    }
+
 
 #sm-banner .banner-box2 {
     background-image: url(../img/banner/b10.jpg);
@@ -444,7 +457,7 @@ body {
 
 /*******************Newsletter*********************/
 
-#newsletter{
+#newsletter {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -455,85 +468,88 @@ body {
     background-position: 20% 30%;
 }
 
-#newsletter .form{
+#newsletter .form {
     display: flex;
     width: 40%;
 }
 
-#newsletter h4{
+#newsletter h4 {
     font-size: 22px;
     font-weight: 700;
     color: #fff;
 }
 
-#newsletter p{
+#newsletter p {
     font-size: 14px;
-    font-weight:  600;
-    color: #818ea0;   
+    font-weight: 600;
+    color: #818ea0;
 }
 
-#newsletter p span{
+#newsletter p span {
     color: #ffbd27;
 }
 
 
-#newsletter input{
+#newsletter input {
     height: 3.125rem;
     padding: 0 1.25em;
-    font-size:14px ;
+    font-size: 14px;
     width: 100%;
     border: 1px solid transparent;
     border-radius: 4px;
-    outline:none;
-    border-bottom-right-radius: 0;    /*    مهم جدااااا*/
-    border-top-right-radius: 0;       /*    مهم جدااااا*/
+    outline: none;
+    border-bottom-right-radius: 0;
+    /*    مهم جدااااا*/
+    border-top-right-radius: 0;
+    /*    مهم جدااااا*/
 }
 
 #newsletter button {
     background-color: #088178;
     color: #fff;
-    white-space:nowrap;            /*    مهم جدااااا*/
+    white-space: nowrap;
+    /*    مهم جدااااا*/
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
 
 
 /*******************Footer*********************/
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-footer .col{
+footer .col {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-footer .logo{
+footer .logo {
     margin-bottom: 30px;
 }
 
-footer h4{
+footer h4 {
     font-size: 14px;
     padding-bottom: 20px;
 }
 
-footer p{
+footer p {
     font-size: 13px;
     margin: 0 0 8px 0;
 }
 
-footer a{
+footer a {
     font-size: 13px;
     text-decoration: none;
     color: #222;
     margin-bottom: 10px;
 }
 
-footer .follow{
+footer .follow {
     margin-top: 20px;
 }
 
@@ -543,22 +559,162 @@ footer .follow i {
     cursor: pointer;
 }
 
-footer .install .row img{
+footer .install .row img {
     border: 1px solid #088178;
     border-radius: 6px;
 }
 
-footer .install img{
-    margin:  10px 0 15px 0;
+footer .install img {
+    margin: 10px 0 15px 0;
 }
 
-footer.follow i:hover , footer a:hover{
+footer.follow i:hover,
+footer a:hover {
     color: #4d0404;
-    
+
 }
+
 /*******************Shop Page*******************/
 
 
 
 
 /*******************Single Product*******************/
+
+
+/*******************Media query*******************/
+
+@media (max-width:1319px){
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 60vh;
+        margin: 10px;
+    }
+}
+
+@media (max-width:799px) {
+
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    /*******************Nav bar*******************/
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px ;
+        height: 100vh;
+        width: 200px;
+        background-color: #e3e6f3;
+        box-shadow: 0px 15px 5px rgba(0, 0, 0, 0.3);
+        padding: 80px 0 0 10px;
+        transition: all ease-in-out 0.7s;
+    }
+
+    
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    /* مهمة جدا لو هضيف كلاس انا مستدعي ال اي دي بتاعه */
+
+   #navbar.active{     
+        right: 0px ;
+    }
+
+    #navbar .close{
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 30px ;
+        font-size: 15px;
+    }
+
+    #navbar .fa-solid{
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        margin: 0 15px;
+        color: #000;
+        align-items: center;
+
+    }
+
+    .mobile a{
+        margin: 0 15px;
+        color: #000;
+        font-size: 20px;
+    }
+
+    .mobile i{
+        color: #000;
+        font-size: 20px;
+    }
+
+    /*******************Banner*******************/
+
+    #banner {
+        height: 70vh;
+        background-position: top 30% right 25%;
+        padding: 0 80px;
+    }
+
+    #banner h4 {
+        font-size: 1.1rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    #banner p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: rgb(39, 152, 181);
+    }
+
+    #features {
+        justify-content: center;
+    }
+
+    #features .featbox {
+        margin: 15px 15px ;
+        transition: all ease-in-out 0.35s;
+        border-radius: 5%;
+    }
+
+    #discount {
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #sm-banner-3 {
+        /* flex-direction: column; */
+        justify-content: center;
+        padding: 0 40px;
+    }
+
+    #sm-banner-3 .banner-box {
+        width: 28%;
+        margin: 1%;
+    }
+
+    #newsletter .form {
+        width: 70%;
+        margin: 2% 0;
+    }
+}
