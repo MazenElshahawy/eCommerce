@@ -718,3 +718,34 @@ footer a:hover {
         margin: 2% 0;
     }
 }
+
+@media (max-width: 477px) {
+    #header{
+        padding: 10px 30px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    #banner{
+        padding: 0 20px;
+        background-position: 65%;
+    }
+
+    #features {
+        justify-content: center;
+    }
+
+    #features {
+        justify-content: center;
+        padding: 10px 5px;
+    }
+
+    #product1 .pro {
+        width: 48%;
+    }
+
+    
+}
