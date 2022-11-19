@@ -1,6 +1,9 @@
 /**********Variables**********/
 const mainimg = document.querySelector("#mainimage")
 const smallimg = document.querySelectorAll(".small-img")
+const bar = document.querySelector("#bar")
+const navbar = document.querySelector("#navbar")
+const close = document.querySelector("#close")
 
 /**********function of selecting an image from multiple **********/
 
@@ -19,4 +22,16 @@ smallimg[2].addEventListener("click", (eo) => {
 
 smallimg[3].addEventListener("click", (eo) => {
     mainimg.src = smallimg[3].src
+})
+
+/**********function of sliding navbar open/close**********/
+
+bar.addEventListener("click", (eo) => {
+    navbar.classList.add("active")
+    eo.preventDefault();
+})
+
+close.addEventListener("click", (eo) => {
+    navbar.classList.remove("active");
+    eo.preventDefault();
 })
