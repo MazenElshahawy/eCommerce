@@ -2,15 +2,18 @@
 const bar = document.querySelector("#bar")
 const navbar = document.querySelector("#navbar")
 const close = document.querySelector("#close")
+const mainimg = document.querySelector("#mainimage")
+const smallimg = document.querySelectorAll(".small-img")
+const prod = document.querySelectorAll(".pro")
 
-
-
-/**********Coding**********/
+/**********function of sliding navbar open/close**********/
 
 bar.addEventListener("click", (eo) => {
     navbar.classList.add("active")
+    eo.preventDefault();
 })
 
 close.addEventListener("click", (eo) => {
-    navbar.classList.remove("active")
+    navbar.classList.remove("active");
+    eo.preventDefault();
 })

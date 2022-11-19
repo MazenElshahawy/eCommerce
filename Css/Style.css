@@ -575,13 +575,100 @@ footer a:hover {
 }
 
 /*******************Shop Page*******************/
+#page-header{
+    background-image: url(../img/banner/b1.jpg);
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+#page-header h2{
+    color: #fff;
+    font-size: 2.52rem;
+    letter-spacing: 0.5rem;
+    margin-top: 30px;
+}
 
+#page-header p{
+    color: #fff;
+    font-size: 1.5rem;
+}
 
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 10px; 
+    cursor: pointer;
+}
 
 /*******************Single Product*******************/
+#prodetails{
+    display: flex;
+    padding-top: 150px;
+}
 
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
 
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;   /*مهمة جدا */
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h4{
+    font-size: 26px ;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px;
+    margin: 30px 0;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    padding:13px 0 ;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#prodetails .single-pro-details input:focus{
+outline: none;     /*مهمة جدا */
+}
+
+#prodetails .single-pro-details button{
+    background-color: #088178;
+    color: #fff;
+}
 /*******************Media query*******************/
 
 @media (max-width:1319px){
@@ -747,5 +834,12 @@ footer a:hover {
         width: 48%;
     }
 
-    
+    /* single product */
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+
+
